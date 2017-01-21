@@ -1,0 +1,80 @@
+/login
+Request Type– POST
+
+Sample request body {
+    "emailId": "admin@bridgelabz.com”,“
+    password”: “Bridge @123”
+}
+
+Sample response body: {
+    "token": "1a285sdffd8do8fd”,“
+    status”: ”200”,
+    “message”: “successfully Authorized”
+}
+
+/searchEmployeeByName
+Request Type– GET
+
+Sample request body {
+    "token": "1a285sdffd8do8fd”
+}
+
+Sample response body: {“
+    employeeList”: [{“
+            engineerId”: ”427188E I”,
+            “emplyeeName”: ”Arti Patel”,
+            ”employeeStatus”: ”Fellowship”,
+            ”company”: ”BridgeLabz”,
+            “mobile”: ”9876000012”,
+            “emailId”: ”artipatel @bridgelabz.com”
+        },
+        {“
+            engineerId”: ”427189E I”,
+            “employeeName”: ”Arjun Thakur”,
+            ”employeeStatus”: ”Internship”,
+            ”company”: ”BridgeLabz”,
+            “mobile”: ”9876000013”,
+            “emailId”: ”arjunthakur @bridgelabz.com”
+        }
+    ]
+}
+
+/readEmployeePersonalData
+Request Type– GET
+Sample request body {
+    "token": "1a285sdffd8do8fd”,“
+    engineerId”: “427188E I”
+}
+
+Sample response body: {
+        "token": "1a285sdffd8do8fd”,“
+        employeeData”: {“
+            engineerId”: ”427188E I”,
+            ”employeeName”: ”Aarti Patel”,
+            “emlpoyeeStatus”: ”Fellowship”,
+            ”company”: ”BridgeLabz”,
+            “mobile”: ”9807654321”,
+            “emailId”: ”arti @bridgelabz.com”,
+            ”blStartDate”: ”1483401600000”,
+            ”companyJoinDate”: ”1483401600000”,
+            “companyLeaveDate”: ”1483401600000”,
+            “leavesTaken”: ”4”
+        },
+        “personalData”: {“
+            engineerId”: ”427188E I”,
+            “emailId”: ”arti @bridgelabz.com”,
+            “mobile”: ”9807654321”,
+            ”dateOfBirth”: ”20 sept 1993”,
+            “fatherName”: ”Senior James bond”,
+            ”fatherMobile”: ”98000007”,
+            “occupation”: ”Teacher”,
+            ”annualSalary”: ”0.007”,
+            ”mumbaiAddress”: ”Plot no57,
+            sector 12,
+            vashi,
+            Pin: 400703”,
+            “premanentAddress”: ”S / O Venkateshappa P.R,
+            C / O Suryanarayana Rao
+            B.P,
+            #30/1 Hort Park Road, S.S Puram 15 th Cross,TUMKUR-572102”}
+}
