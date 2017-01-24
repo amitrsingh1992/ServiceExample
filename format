@@ -78,3 +78,66 @@ Sample response body: {
             B.P,
             #30/1 Hort Park Road, S.S Puram 15 th Cross,TUMKUR-572102”}
 }
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+emplate: '<a href=""><div class="item" style="height:auto;"></img><div class="item-int"><h3>{{item.employeeName}}</h3>\
+                      <div class="data"><img src="images/1024x1024.jpg"/>\
+                      <span class="left">{{item.employeeStatus}}</span>\
+                      <span class="left">{{item.company}}</span>\
+                      <span class="left">{{item.mobile}}</span>\
+                      <span class="left">{{item.emailId}}</span></div></div></div></a>'
+}
+
+#items {
+   clear: both;
+}
+
+#main .item {
+   border: 1px solid #999999;
+   box-shadow: .5px .5px .5px 1px grey;
+    display: inline-block;
+    margin: 0 8px 15px;
+    width: 323px;
+    height: 112px;
+    background-color: rgba(240, 237, 234, 1);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 50%);
+    border-radius: 5px;
+
+}
+
+.item-int {
+   margin: 0 auto;
+   /*padding: 1px 0 30px;*/
+   /*white-space: nowrap;*/
+  overflow: hidden!important;
+  text-overflow: ellipsis!important;
+
+}
+
+.item-int h3 {
+ display: inline-block;
+  width: 200px;
+  height: 18px;
+  opacity: 100;
+  color: #3B5372;
+  font-family: LucidaGrande-Bold;
+  line-height: 0px;
+  font-size: 14px;
+  letter-spacing: 0px;
+  font-weight: bold;
+  margin-left: 40%;
+  margin-bottom: -3%;
+
+}
+
+.item-int img {
+ width: 110px;
+ float: left;
+ margin: 2%;
+ margin-top: -30px;
+ border-radius: 5px;
+}
+
+.item-int .data {
+   margin: 5px 0;
+   text-align:center;
+}

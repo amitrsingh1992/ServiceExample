@@ -1,5 +1,5 @@
 var dashboard = angular.module("dashboard",["ui.router","satellizer"]);
-dashboard.config(function ($stateProvider) {
+dashboard.config(function ($stateProvider,$urlRouterProvider) {
   var skipIfLoggedIn = ['$q', '$auth', function($q, $auth) {
   var deferred = $q.defer();
   if ($auth.isAuthenticated()) {
@@ -59,4 +59,5 @@ var loginRequired = ['$q', '$location', '$auth', function($q, $location, $auth) 
       loginRequired: loginRequired
     }
   })
+$urlRouterProvider.otherwise('/login');
 });

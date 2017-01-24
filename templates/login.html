@@ -1,33 +1,21 @@
-<style media="screen">
-table, th, td {
-    border: 0px;
-    margin-left: 35%;
-}
-input{
-  border-spacing: 2em;
-  margin: 5%;
-  border-radius: 4px;
-}
-#submit{
-  margin-left: 50%;
-}
-</style>
-    <div >
-      <form name="form1">
-        <table name="table" id="table">
-          <tr>
-            <td>User Name(Email Id)</td>
-            <td><input type="email" ng-model="data.emailId" maxlength="100" required/></td>
-          </tr>
-          <tr>
-            <td>Password</td>
-            <td><input type="password" ng-model="data.password" ng-pattern="/^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,32}$/" required></td>
-          </tr>
-          <tr>
-            <td colspan="2">
-              <input type="button" id ="submit" align="center" ng-click="loginFunction()" value="SUBMIT"/>
-            </td>
-          </tr>
+<div class="loginPage">
+  <center>
+    <form name="form1">
+        <table>
+            <tr>
+                <td>User Name(Email Id)</td>
+                <td><input type="email" ng-model="data.emailId" maxlength="100" required/></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" ng-model="data.password" ng-pattern="/^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,32}$/" required></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="button" id="submit" align="center" ng-click="loginFunction()" value="SUBMIT" />
+                </td>
+            </tr>
         </table>
-      </form>
-    </div>
+    </form>
+  </center>
+</div>

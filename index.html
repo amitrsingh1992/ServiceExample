@@ -11,6 +11,7 @@
     <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
     <script src="bower_components/satellizer/dist/satellizer.min.js"></script>
     <link rel="stylesheet" href="/css/styles.css" media="screen">
+    <link rel="stylesheet" href="/css/footer.css" media="screen">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
@@ -19,10 +20,10 @@
 
 
     <nav class="navbar navbar-inverse" ng-controller="main" style="box-shadow:0 0 10px black">
-        <a class="navbar-brand" href="#">Assignment</a>
+        <a class="navbar-brand" href="#" class="active">Assignment</a>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li class="active"><a ui-sref="dashboard">Home</a></li>
+                <li><a ui-sref="dashboard">Home</a></li>
                 <li><a ui-sref="empList">Employee List</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -33,7 +34,7 @@
     </nav>
 
       <div class="mainpage">
-        <img src="logo.png" alt="Bridgelabz Logo" />
+        <img src="logo.png" alt="Bridgelabz Logo"/>
           <div ui-view></div>
 
     </div>
@@ -44,43 +45,43 @@
               <div class="container">
                   <div class="row">
                       <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
-                          <h3> Lorem Ipsum </h3>
+                          <h3> Latest News </h3>
                           <ul>
-                              <li> <a href="#"> Lorem Ipsum </a> </li>
-                              <li> <a href="#"> Lorem Ipsum </a> </li>
-                              <li> <a href="#"> Lorem Ipsum </a> </li>
-                              <li> <a href="#"> Lorem Ipsum </a> </li>
+                              <li> <a href="#"> Project Deadlines </a> </li>
+                              <li> <a href="#"> Coming Project </a> </li>
+                              <li> <a href="#"> Future Vision  </a> </li>
+                              <li> <a href="#"> 2017 Mission </a> </li>
                           </ul>
                       </div>
                       <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
-                          <h3> Lorem Ipsum </h3>
+                          <h3> Notification </h3>
                           <ul>
-                              <li> <a href="#"> Lorem Ipsum </a> </li>
-                              <li> <a href="#"> Lorem Ipsum </a> </li>
-                              <li> <a href="#"> Lorem Ipsum </a> </li>
-                              <li> <a href="#"> Lorem Ipsum </a> </li>
+                              <li> <a href="#"> Recent Student Placement </a> </li>
+                              <li> <a href="#"> New Student Induction </a> </li>
+                              <li> <a href="#"> Traditional Day Celebration </a> </li>
+                              <li> <a href="#"> Independence Day Celebration </a> </li>
                           </ul>
                       </div>
                       <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
-                          <h3> Lorem Ipsum </h3>
+                          <h3> Core Member </h3>
                           <ul>
-                              <li> <a href="#"> Lorem Ipsum </a> </li>
-                              <li> <a href="#"> Lorem Ipsum </a> </li>
-                              <li> <a href="#"> Lorem Ipsum </a> </li>
-                              <li> <a href="#"> Lorem Ipsum </a> </li>
+                              <li> <a href="#"> Narayan Mahadevan(Founder & Director) </a> </li>
+                              <li> <a href="#"> Ramesh Iyer(C.E.O & Co-founder) </a> </li>
+                              <li> <a href="#">  Shreevidya Ramamurthy(Founder & Director)</a> </li>
+                              <li> <a href="#"> Veejay Basottia(Head Human Resource) </a> </li>
                           </ul>
                       </div>
                       <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
-                          <h3> Lorem Ipsum </h3>
+                          <h3> Partners </h3>
                           <ul>
-                              <li> <a href="#"> Lorem Ipsum </a> </li>
-                              <li> <a href="#"> Lorem Ipsum </a> </li>
-                              <li> <a href="#"> Lorem Ipsum </a> </li>
-                              <li> <a href="#"> Lorem Ipsum </a> </li>
+                              <li> <a href="https://www.nexteducation.in"> Next Education </a> </li>
+                              <li> <a href="https://www.greythr.com"> GreyTip </a> </li>
+                              <li> <a href="https://www.enzigma.com"> Enzigma </a> </li>
+                              <li> <a href="https://www.valuepitch.com"> Value Pitch </a> </li>
                           </ul>
                       </div>
                       <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
-                          <h3> Lorem Ipsum </h3>
+                          <h3> Contant Us </h3>
                           <ul>
                               <li>
                                   <div class="input-append newsletter-box text-center">
@@ -130,5 +131,6 @@
 <script src="controllers/dashboardCtrl.js" charset="utf-8"></script>
 <script src="controllers/logoutCtrl.js" charset="utf-8"></script>
 <script src="services/myservice.js" charset="utf-8"></script>
+<script src="directives/employeeCard.js" charset="utf-8"></script>
 
 </html>
